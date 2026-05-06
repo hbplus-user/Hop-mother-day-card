@@ -129,7 +129,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.8 }}
+          transition={{ duration: 1.2, delay: 4.8 }}
           className="mt-8 flex items-center gap-3 text-xs tracking-[0.4em] text-primary/70 uppercase font-light"
         >
           <span className="h-px w-8 bg-primary/40" />
