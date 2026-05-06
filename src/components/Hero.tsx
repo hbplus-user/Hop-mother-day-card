@@ -120,7 +120,7 @@ export const Hero = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 2.4 }}
+          transition={{ duration: 1.2, delay: 4.4 }}
           className="text-base md:text-lg text-muted-foreground font-light tracking-wide mt-24 md:mt-32"
         >
           A wellness experience made just for her.
