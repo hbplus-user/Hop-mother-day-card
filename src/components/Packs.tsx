@@ -28,9 +28,7 @@ export const Packs = () => {
             Wellness Pack
           </span>
           <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
-            Thoughtfully crafted sessions and expert guidance
-            <br className="hidden md:block" />
-            to help her move better, feel better, live better.
+            Thoughtfully crafted sessions and expert guidance&nbsp;to help her move better, feel better, live better.
           </p>
         </motion.div>
 
