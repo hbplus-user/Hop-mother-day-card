@@ -48,7 +48,7 @@ export const CTA = () => {
           </motion.a>
 
           <p className="mt-8 text-[11px] tracking-[0.3em] uppercase text-muted-foreground/60 font-light">
-            Continues on WhatsApp · Personal Concierge
+            Continues on WhatsApp.
           </p>
         </motion.div>
       </div>
