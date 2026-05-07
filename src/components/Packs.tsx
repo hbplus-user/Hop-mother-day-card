@@ -25,7 +25,7 @@ export const Packs = () => {
             <FloralOrnament />
           </div>
           <span className="font-serif text-xs md:text-sm tracking-[0.5em] text-foreground/90 uppercase">
-            Wellness Combo Pack
+            Wellness Pack
           </span>
           <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
             Thoughtfully crafted sessions and expert guidance
