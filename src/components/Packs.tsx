@@ -93,26 +93,6 @@ export const Packs = () => {
           </p>
         </motion.div>
 
-        {/* Validity row */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-          {[
-            "Must be activated within 2 weeks of purchase",
-            "Valid for 21 days from the date of redemption",
-          ].map((line) => (
-            <div
-              key={line}
-              className="glow-card px-5 py-4 flex items-center gap-3"
-            >
-              <span className="w-9 h-9 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                <Calendar className="w-4 h-4 text-primary" strokeWidth={1.4} />
-              </span>
-              <p className="text-xs md:text-sm text-muted-foreground font-light leading-snug">
-                {line}
-              </p>
-            </div>
-          ))}
-        </div>
-
         {/* CTA */}
         <div className="mt-10 text-center">
           <motion.a
