@@ -192,6 +192,7 @@ export const Hero = () => {
                 </div>
               </div>
             </motion.div>
+          </motion.div>
 
           {/* Glow burst on open */}
           <motion.div
