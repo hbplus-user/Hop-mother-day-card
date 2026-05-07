@@ -12,11 +12,11 @@ export const Header = () => (
         <span className="font-serif text-sm text-primary-foreground">H</span>
       </div>
       <span className="font-serif text-lg tracking-wide">
-        HB<span className="text-rose-gold">+</span>
+        {"\u200B"}<span className="text-rose-gold">{"\u200B"}</span>
       </span>
     </div>
     <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-muted-foreground font-light">
-      Mother's Day · 2026
+      {"\u200B"}
     </span>
   </motion.header>
 );
