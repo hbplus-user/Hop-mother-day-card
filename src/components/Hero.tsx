@@ -93,9 +93,30 @@ export const Hero = () => {
                 <span>{"\u200B"}</span>
               </div>
               <p className="font-serif text-2xl md:text-4xl leading-tight text-cream-foreground">
-                <span className="block text-foreground/90">This Mother's Day,</span>
-                <span className="block italic text-rose-gold">Gift Her</span>
-                <span className="block text-foreground/90">{"\u200B"}Energy & Strength</span>
+                <motion.span
+                  className="block text-foreground/90"
+                  initial={{ opacity: 0, y: 14, filter: "blur(8px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 1.2, delay: 3.2, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  This Mother's Day,
+                </motion.span>
+                <motion.span
+                  className="block italic text-rose-gold"
+                  initial={{ opacity: 0, y: 18, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 1.4, delay: 3.9, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  Gift Her
+                </motion.span>
+                <motion.span
+                  className="block text-foreground/90"
+                  initial={{ opacity: 0, y: 18, filter: "blur(10px)" }}
+                  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                  transition={{ duration: 1.4, delay: 4.6, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  Energy & Strength
+                </motion.span>
               </p>
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-12 h-px bg-gradient-to-r from-transparent via-primary to-transparent" />
             </motion.div>
