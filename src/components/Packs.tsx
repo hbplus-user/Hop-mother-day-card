@@ -27,8 +27,8 @@ export const Packs = () => {
           <span className="font-serif text-xs md:text-sm tracking-[0.5em] text-foreground/90 uppercase">
             ​
           </span>
-          <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
-            A calming wellness experience designed to help&nbsp;her&nbsp;feel energized, supported, and cared&nbsp;
+          <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto whitespace-pre-line">
+            Thoughtfully designed to help her{"\n"}feel stronger, lighter, and more like herself again.
           </p>
         </motion.div>
 

@@ -191,9 +191,9 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 4.4 }}
-          className="text-base md:text-lg text-muted-foreground font-light tracking-wide mt-4 md:mt-6"
+          className="text-base md:text-lg text-muted-foreground font-light tracking-wide mt-4 md:mt-6 whitespace-pre-line"
         >
-          Because caring for herself<br />shouldn’t come last anymore.
+          Because caring for her body{"\n"}shouldn’t come last anymore.
         </motion.p>
 
         <motion.div
