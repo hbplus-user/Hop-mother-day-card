@@ -4,8 +4,8 @@ import { Clock, CalendarCheck } from "lucide-react";
 const details = [
   {
     icon: Clock,
-    title: "Activation Window",
-    text: "Must be activated within 2 weeks of purchase",
+    title: "​",
+    text: "This Mother’s Day, give her a reason to slow down and care for herself too.",
   },
   {
     icon: CalendarCheck,
