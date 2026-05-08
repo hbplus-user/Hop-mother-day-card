@@ -28,7 +28,7 @@ export const Packs = () => {
             Wellness Pack
           </span>
           <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto">
-            Thoughtfully crafted sessions and expert guidance&nbsp;to help her move better, feel better, live better.
+            A calming wellness experience designed to help her<br />feel energised, supported, and cared for.
           </p>
         </motion.div>
 
