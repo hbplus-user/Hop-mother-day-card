@@ -25,11 +25,11 @@ export const CTA = () => {
         >
           <h2 className="font-serif leading-snug">
             <span className="block text-foreground/90 font-extralight text-2xl md:text-3xl max-w-xl mx-auto">
-              Because the women who care for everyone else deserve care too.
+              Because the women who care for everyone else deserve care first.
             </span>
           </h2>
           <p className="mt-6 text-muted-foreground font-light tracking-wide italic">
-            More than a gift. A feeling.
+            More than a gift. A Lifestyle.
           </p>
 
           <motion.a
