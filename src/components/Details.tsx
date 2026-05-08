@@ -38,7 +38,7 @@ export const Details = () => {
               </div>
               <div className="space-y-1.5">
                 <p className="font-serif text-foreground text-sm font-thin tracking-wide min-h-[1.25rem]">{d.title}</p>
-                <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-xs mx-auto">{d.text}</p>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed max-w-xs mx-auto whitespace-pre-line">{d.text}</p>
               </div>
             </motion.div>
           ))}
