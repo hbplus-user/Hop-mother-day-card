@@ -42,7 +42,7 @@ export const Details = () => {
                 <d.icon className="w-5 h-5" strokeWidth={1.2} />
               </div>
               <div>
-                <p className="font-serif text-lg text-foreground">{d.title}</p>
+                <p className="font-serif text-foreground text-sm text-center font-thin">{d.title}</p>
                 <p className="text-sm text-muted-foreground font-light mt-0.5">{d.text}</p>
               </div>
             </motion.div>
