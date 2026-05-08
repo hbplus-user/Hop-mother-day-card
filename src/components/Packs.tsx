@@ -3,7 +3,7 @@ import { Dumbbell, Flower2, Soup, Calendar, Gift, Flower } from "lucide-react";
 import { FloralOrnament } from "./FloralOrnament";
 
 const inclusions = [
-  { icon: Dumbbell, label: "4 Strength Sessions (35 mins)" },
+  { icon: Dumbbell, label: "4 Strength Sessions\n(35 mins)" },
   { icon: Flower2, label: "2 Yoga Sessions" },
   { icon: Soup, label: "1 Nutrition Assessment" },
 ];
@@ -80,7 +80,7 @@ export const Packs = () => {
                 <span className="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
                   <item.icon className="w-4 h-4 text-primary" strokeWidth={1.4} />
                 </span>
-                <span className="text-sm md:text-base text-foreground/90 font-light tracking-wide">
+                <span className="text-sm md:text-base text-foreground/90 font-light tracking-wide whitespace-pre-line">
                   {item.label}
                 </span>
               </motion.li>
