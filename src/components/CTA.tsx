@@ -46,9 +46,6 @@ export const CTA = () => {
             </span>
           </motion.a>
 
-          <p className="mt-6 text-muted-foreground/70 font-light italic text-sm">
-            A small gift that can make her feel seen, again.
-          </p>
         </motion.div>
       </div>
     </section>
