@@ -102,10 +102,10 @@ export const Packs = () => {
             className="btn-luxe inline-flex items-center gap-3 px-10 py-4 rounded-full font-serif text-lg tracking-[0.2em] uppercase"
           >
             <Gift className="w-5 h-5" strokeWidth={1.5} />
-            <span className="text-sm">Gift The Experience</span>
+            <span className="text-sm whitespace-pre-line text-center">Gift The Experience{"\n"}(You’re One Step Away From Her Wellness Journey)</span>
           </motion.a>
           <p className="mt-5 text-xs tracking-[0.3em] uppercase text-muted-foreground/70 font-light">
-            You’re One Step Away From Her Wellness Journey
+            A small gift that can make her feel like herself again.
           </p>
         </div>
       </div>
