@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import hbLogo from "@/assets/hb-logo.png";
+import hbLogo from "@/assets/image.png";
 
 export const Header = () => (
   <motion.header

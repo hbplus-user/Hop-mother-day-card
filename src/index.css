@@ -5,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Gilroy';
   src: url('/fonts/Gilroy-Medium.woff2') format('woff2');
@@ -12,6 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'The Seasons';
   src: url('/fonts/TheSeasons-Regular.woff2') format('woff2');
@@ -27,8 +29,10 @@
 @layer base {
   :root {
     /* Premium dark palette — onyx with silver/champagne accents */
-    --background: 0 0% 4%;            /* near black */
-    --foreground: 40 18% 92%;         /* warm off-white */
+    --background: 0 0% 4%;
+    /* near black */
+    --foreground: 40 18% 92%;
+    /* warm off-white */
 
     --card: 0 0% 7%;
     --card-foreground: 40 18% 92%;
@@ -83,8 +87,14 @@
 }
 
 @layer base {
-  * { @apply border-border; }
-  html { scroll-behavior: smooth; }
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
     background: var(--gradient-bg);
@@ -92,8 +102,21 @@
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
-  .font-serif { font-family: 'The Seasons', 'Cormorant Garamond', serif; letter-spacing: 0.01em; }
-  h1, h2, h3, h4, h5, h6 { font-family: 'The Seasons', 'Cormorant Garamond', serif; font-weight: 400; }
+
+  .font-serif {
+    font-family: 'The Seasons', 'Cormorant Garamond', serif;
+    letter-spacing: 0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'The Seasons', 'Cormorant Garamond', serif;
+    font-weight: 400;
+  }
 }
 
 @layer components {
@@ -107,6 +130,7 @@
   .glass-hover {
     transition: all 0.6s var(--transition-luxe);
   }
+
   .glass-hover:hover {
     border-color: hsl(40 22% 78% / 0.4);
     transform: translateY(-6px);
@@ -138,6 +162,7 @@
       inset 0 -1px 0 hsl(0 0% 0% / 0.25),
       0 10px 30px -15px hsl(40 22% 78% / 0.4);
   }
+
   .btn-luxe::after {
     content: '';
     position: absolute;
@@ -146,6 +171,7 @@
     background: linear-gradient(180deg, hsl(0 0% 100% / 0.18), transparent 55%);
     pointer-events: none;
   }
+
   .btn-luxe:hover {
     transform: translateY(-2px) scale(1.02);
     box-shadow: 0 14px 40px -10px hsl(40 22% 78% / 0.55);
@@ -163,52 +189,53 @@
   .glow-card {
     position: relative;
     border-radius: 1.25rem;
-    background:
-      radial-gradient(ellipse 80% 60% at 30% 0%, hsl(40 22% 78% / 0.08), transparent 60%),
-      linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
+    background: #080808;
     overflow: hidden;
     isolation: isolate;
   }
+
   .glow-card::before {
     content: '';
     position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    padding: 1px;
-    background: conic-gradient(
-      from var(--angle, 0deg),
-      transparent 0deg,
-      hsl(40 30% 92% / 0.9) 60deg,
-      hsl(38 28% 70% / 0.6) 110deg,
-      transparent 180deg,
-      transparent 360deg
-    );
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    animation: rotate-border 6s linear infinite;
-    pointer-events: none;
+    inset: -150%;
+    background: conic-gradient(from var(--angle, 0deg),
+        transparent 0deg,
+        transparent 340deg,
+        #fff 350deg,
+        hsl(40 100% 70%) 355deg,
+        transparent 360deg);
+    animation: rotate-border 4s linear infinite;
     z-index: 1;
+    pointer-events: none;
   }
+
   .glow-card::after {
     content: '';
     position: absolute;
-    inset: 1px;
-    border-radius: calc(1.25rem - 1px);
-    background:
-      radial-gradient(ellipse 70% 50% at 25% -10%, hsl(40 22% 78% / 0.10), transparent 65%),
-      linear-gradient(180deg, hsl(0 0% 8%) 0%, hsl(0 0% 4%) 100%);
-    z-index: 0;
+    inset: 1.5px;
+    background: 
+      radial-gradient(ellipse 80% 60% at 30% 0%, hsl(40 22% 78% / 0.12), transparent 60%),
+      linear-gradient(180deg, hsl(0 0% 12%) 0%, hsl(0 0% 6%) 100%);
+    border-radius: calc(1.25rem - 1.5px);
+    z-index: 2;
+    pointer-events: none;
   }
-  .glow-card > * { position: relative; z-index: 2; }
+
+  .glow-card>* {
+    position: relative;
+    z-index: 3;
+  }
 
   @property --angle {
     syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
   }
+
   @keyframes rotate-border {
-    to { --angle: 360deg; }
+    to {
+      --angle: 360deg;
+    }
   }
 }
 
@@ -223,6 +250,12 @@
     pointer-events: none;
     z-index: 0;
   }
-  .font-display { font-family: 'The Seasons', 'Cormorant Garamond', serif; }
-  .font-body { font-family: 'Gilroy', 'Inter', sans-serif; }
+
+  .font-display {
+    font-family: 'The Seasons', 'Cormorant Garamond', serif;
+  }
+
+  .font-body {
+    font-family: 'Gilroy', 'Inter', sans-serif;
+  }
 }
