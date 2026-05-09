@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Particles } from "./Particles";
 import { FloralOrnament } from "./FloralOrnament";
-import hbLogo from "@/assets/hb-plus-logo.png";
+
 
 export const Hero = () => {
   return (
@@ -114,13 +114,10 @@ export const Hero = () => {
               />
 
               {/* top row: brand + status */}
-              <div className="absolute top-3 left-4 right-4 flex items-center justify-between z-10">
-                <img
-                  src={hbLogo}
-                  alt="HB+"
-                  className="h-5 md:h-6 w-auto object-contain opacity-90"
-                  style={{ filter: "brightness(0) invert(1) drop-shadow(0 1px 0 rgba(0,0,0,0.5))" }}
-                />
+              <div className="absolute top-4 left-5 right-4 flex items-center justify-between z-10">
+                <span className="font-serif text-sm md:text-base tracking-[0.2em] text-white/90 drop-shadow-sm">
+                  hop
+                </span>
               </div>
 
               {/* center embossed text */}

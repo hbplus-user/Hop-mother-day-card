@@ -4,7 +4,6 @@ import { FloralOrnament } from "./FloralOrnament";
 
 const inclusions = [
   { icon: Dumbbell, label: "4 Strength Sessions\n(35 mins)" },
-  { icon: Flower2, label: "2 Yoga Sessions\n(45 mins)" },
   { icon: Soup, label: "1 Nutrition Assessment\n(35 mins consultation)" },
 ];
 
@@ -22,7 +21,7 @@ export const Packs = () => {
           className="text-center mb-10"
         >
           <span className="font-serif text-xs md:text-sm tracking-[0.5em] text-foreground/90 uppercase">
-            ​
+
           </span>
           <p className="mt-5 text-sm md:text-base text-muted-foreground font-light leading-relaxed max-w-md mx-auto whitespace-pre-line">
             Thoughtfully designed to help her{"\n"}grow stronger, feel lighter - basically more like herself again.
