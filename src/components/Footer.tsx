@@ -1,7 +1,7 @@
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 
 
-import hbLogo from "@/assets/hb-plus-logo.png";
+import hopLogo from "@/assets/hop-logo.png";
 
 const socials = [
   { icon: Instagram, href: "https://www.instagram.com/hopwith_hb/", label: "Instagram" },
@@ -12,7 +12,9 @@ const socials = [
 export const Footer = () => (
   <footer className="relative py-12 px-6 border-t border-white/5">
     <div className="max-w-6xl mx-auto flex flex-col items-center gap-8 md:flex-row md:justify-between md:gap-6">
-      <img src={hbLogo} alt="HB+ logo" className="h-8 w-auto object-contain opacity-80" />
+      <span className="font-serif text-2xl tracking-[0.1em] text-gradient cursor-default">
+        hop
+      </span>
 
       <div className="flex items-center gap-4 order-last md:order-none">
         {socials.map(({ icon: Icon, href, label }) => (
