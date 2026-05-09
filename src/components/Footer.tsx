@@ -12,9 +12,14 @@ const socials = [
 export const Footer = () => (
   <footer className="relative py-12 px-6 border-t border-white/5">
     <div className="max-w-6xl mx-auto flex flex-col items-center gap-8 md:flex-row md:justify-between md:gap-6">
-      <span className="font-serif text-2xl tracking-[0.1em] text-gradient cursor-default">
-        hop
-      </span>
+      <img 
+        src={hopLogo} 
+        alt="Hop logo" 
+        className="h-6 md:h-8 w-auto object-contain opacity-90 transition-all duration-300" 
+        style={{ 
+          filter: "brightness(0) saturate(100%) invert(89%) sepia(11%) saturate(368%) hue-rotate(355deg) brightness(92%) contrast(86%)" 
+        }}
+      />
 
       <div className="flex items-center gap-4 order-last md:order-none">
         {socials.map(({ icon: Icon, href, label }) => (

@@ -10,9 +10,14 @@ export const Header = () => (
     className="fixed top-0 inset-x-0 z-50 px-6 md:px-10 py-5 flex items-center justify-between backdrop-blur-md bg-background/30 border-b border-white/5"
   >
     <div className="flex items-center gap-2">
-      <span className="font-serif text-2xl tracking-[0.1em] text-gradient cursor-default">
-        hop
-      </span>
+      <img 
+        src={hopLogo} 
+        alt="Hop logo" 
+        className="h-6 md:h-8 w-auto object-contain transition-all duration-300" 
+        style={{ 
+          filter: "brightness(0) saturate(100%) invert(89%) sepia(11%) saturate(368%) hue-rotate(355deg) brightness(92%) contrast(86%) drop-shadow(0 0 10px rgba(212, 209, 193, 0.2))" 
+        }}
+      />
     </div>
     <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-muted-foreground font-light">
       {"\u200B"}
