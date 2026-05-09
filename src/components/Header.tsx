@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import hbLogo from "@/assets/hb-plus-logo.png";
 
 
 export const Header = () => (
@@ -9,9 +10,7 @@ export const Header = () => (
     className="fixed top-0 inset-x-0 z-50 px-6 md:px-10 py-5 flex items-center justify-between backdrop-blur-md bg-background/30 border-b border-white/5"
   >
     <div className="flex items-center gap-2">
-      <span className="font-serif text-xl tracking-[0.2em] text-foreground/90">
-        hop
-      </span>
+      <img src={hbLogo} alt="HB+ logo" className="h-8 w-auto object-contain" />
     </div>
     <span className="text-[10px] md:text-xs tracking-[0.3em] uppercase text-muted-foreground font-light">
       {"\u200B"}
