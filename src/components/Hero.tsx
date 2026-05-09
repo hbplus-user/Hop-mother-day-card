@@ -32,7 +32,7 @@ export const Hero = () => {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto">
         {/* Card reveal animation — extra top margin equals lift distance so card never overlaps header */}
-        <div className="relative mb-12 mt-[140px] md:mt-[200px] [perspective:2200px]">
+        <div className="relative mb-12 mt-[110px] md:mt-[200px] [perspective:2200px]">
           <motion.div
             initial={{ opacity: 0, scale: 0.86, y: 24 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -114,17 +114,17 @@ export const Hero = () => {
               />
 
               {/* top row: brand + status */}
-              <div className="absolute top-4 left-5 right-4 flex items-center justify-between z-10">
-                <span className="font-serif text-sm md:text-base tracking-[0.2em] text-white/90 drop-shadow-sm">
+              <div className="absolute top-3 left-4 right-4 flex items-center justify-between z-10">
+                <span className="font-serif text-[10px] md:text-base tracking-[0.2em] text-white/90 drop-shadow-sm">
                   hop
                 </span>
               </div>
 
               {/* center embossed text */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 pt-6">
                 <p className="font-serif leading-tight">
                   <motion.span
-                    className="block text-[11px] md:text-xs tracking-[0.45em] uppercase font-light mb-2"
+                    className="block text-[9px] md:text-xs tracking-[0.45em] uppercase font-light mb-1 md:mb-2"
                     style={{ color: "rgba(243,224,191,0.55)" }}
                     initial={{ opacity: 0, y: 14, filter: "blur(8px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -134,7 +134,7 @@ export const Hero = () => {
                     This Mother's Day
                   </motion.span>
                   <motion.span
-                    className="block italic text-3xl md:text-5xl"
+                    className="block italic text-2xl md:text-5xl"
                     style={{
                       background:
                         "linear-gradient(180deg, #fbeccb 0%, #d8ad75 45%, #8a5a32 100%)",
@@ -151,7 +151,7 @@ export const Hero = () => {
                     Gift Her
                   </motion.span>
                   <motion.span
-                    className="block md:text-xl font-light tracking-wide mt-1 text-2xl"
+                    className="block md:text-xl font-light tracking-wide mt-1 text-xl"
                     style={{ color: "rgba(243,224,191,0.85)" }}
                     initial={{ opacity: 0, y: 18, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
