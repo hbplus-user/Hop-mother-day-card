@@ -63,7 +63,7 @@ export const Packs = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
-                className="glow-card flex items-center gap-4 px-6 py-4"
+                className="relative flex items-center gap-4 px-6 py-4 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-sm"
               >
                 <span className="w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
                   <item.icon className="w-4 h-4 text-primary" strokeWidth={1.4} />
@@ -85,7 +85,7 @@ export const Packs = () => {
         {/* CTA */}
         <div className="mt-10 text-center">
           <motion.a
-            href="https://pages.razorpay.com/pl_SmsT4cx1TF0I0k/view"
+            href="https://pages.razorpay.com/pl_SmwXMHweszthmt/view"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
